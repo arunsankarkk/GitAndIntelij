@@ -8,7 +8,10 @@ public class MainApp {
         FunctionalInterface funcIntf = (value1,value2) -> {
             return value1+value2;
         };
-        System.out.print("The Sum of two number is " +funcIntf.perform(10,20));
+        System.out.println("The Sum of two number is " +funcIntf.perform(10,20));
+
+        ChildAppOne childAppOne = new ChildAppOne();
+        System.out.print(childAppOne.display());
     }
 
 
